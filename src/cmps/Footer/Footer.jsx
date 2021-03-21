@@ -7,11 +7,11 @@ const Footer = (props) => {
 
     return (
         <footer className="footer flex center-center">
-        Guy Indepurker 2020 &copy;
+            Guy Indepurker 2020 &copy;
         </footer>
     )
 
-   
+
 }
 
 export default Footer

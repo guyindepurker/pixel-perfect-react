@@ -1,20 +1,30 @@
 
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import './Menu.scss'
+import Ul from '../Ul/Ul';
 
 const Menu = (props) => {
-const menuLinks = [{txt:'Home',src:'/'},{txt:'about',src:'/about'}]
+    const menuLinks = [{ txt: 'Home', src: '/' }, { txt: 'about', src: '/about' }]
     return (
-        <nav className="menu">
-        <ul className="clean-list menu-links flex flex-gap">
-        {menuLinks.map((link,idx)=><li key={idx} className="nav-link"><NavLink exact to={link.src}>{link.txt}</NavLink></li>)}
-        </ul>
-        </nav>
+        <NavMenu>
+                {menuLinks.map(({ txt, src }, idx) => <LiLink key={idx} src={src} txt={txt} />)}
+        </NavMenu>
     )
 
-   
+
 }
 
 export default Menu
+
+const NavMenu = (props) => {
+   return( <nav className="menu">
+       <Ul classNames="menu-links flex flex-gap">
+            {props.children}
+        </Ul>
+    </nav>)
+}
+const LiLink = ({ src, txt }) => {
+    return <li className="menu-link"><NavLink exact to={src}>{txt}</NavLink></li>
+}

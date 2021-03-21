@@ -8,21 +8,21 @@ const Header = (props) => {
 
     return (
         <header className="header">
-       <div className="main-header container flex space-between">
-       <Logo />
-        <Menu />
-       </div>
+            <div className="main-header container flex space-between">
+                <Logo />
+                <Menu />
+            </div>
         </header>
     )
 
-   
+
 }
 
 export default Header
-const Logo = () =>{
+const Logo = () => {
     return (
         <div className="logo">
             Logo
-           </div>
+        </div>
     )
 }

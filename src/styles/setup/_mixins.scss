@@ -1,18 +1,21 @@
 /* Media queries Breakpoint mixins */
 
 @mixin respond($breakpoint) {
+
   // $mobile: 350px;
   @if $breakpoint==max-mobile {
     @media only screen and (max-width: $break-max-mobile) {
       @content;
     }
   }
+
   // $mobile: 400px;
   @if $breakpoint==mobile {
     @media only screen and (max-width: $break-mobile) {
       @content;
     }
   }
+
   // $mobile: 450px;
   @if $breakpoint==min-mobile {
     @media only screen and (max-width: $break-mobile-min) {
@@ -27,6 +30,7 @@
       @content;
     }
   }
+
   // $narrow: 750px;
 
   @if $breakpoint==narrow {
@@ -34,6 +38,7 @@
       @content;
     }
   }
+
   // $break-normal: 950px;
 
   @if $breakpoint==normal {
@@ -41,6 +46,7 @@
       @content;
     }
   }
+
   // $break-max-normal:1050px;
 
   @if $breakpoint==max-normal {
@@ -54,6 +60,7 @@
       @content;
     }
   }
+
   // $break-wide: 1300px;
   @if $breakpoint==wide {
     @media only screen and (max-width: $break-wide) {
@@ -62,68 +69,41 @@
   }
 }
 
-@mixin for-mobile-layout {
-  // $break-max-narrow: 400px;
+@mixin flex-center {
 
-  @media (max-width: $break-mobile) {
-    @content;
-  }
-}
-
-@mixin for-max-narrow-layout {
-  // $break-max-narrow: 550px;
-
-  @media (max-width: $break-max-narrow) {
-    @content;
-  }
-}
-
-@mixin for-narrow-layout {
-  // $break-narrow: 750px;
-
-  @media (max-width: $break-narrow) {
-    @content;
-  }
-}
-
-@mixin for-normal-layout {
-  // $break-norml: 950px;
-  @media (max-width: $break-normal) {
-    @content;
-  }
-}
-
-@mixin for-wide-layout {
-  // $break-wide: 1300px;
-  @media (max-width: $break-wide) {
-    @content;
-  }
-}
-@mixin flex-center{
-  
   align-items: center;
   justify-content: center;
 }
-/* Media  Mixins */
+
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 
 //aspect ratio mixin
 @mixin aspect-ratio($width, $height) {
   position: relative;
   overflow: hidden;
+
   &:before {
     content: "";
     display: block;
     width: 100%;
     padding-top: ($height / $width) * 100%;
   }
-  > * {
+
+  >* {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
   }
-  > img {
+
+  >img {
     height: 100%;
     object-fit: cover;
   }

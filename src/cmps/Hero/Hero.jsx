@@ -7,11 +7,11 @@ const Hero = (props) => {
 
     return (
         <section className="hero">
-        Hero is works!
+            Hero is works!
         </section>
     )
 
-   
+
 }
 
 export default Hero
