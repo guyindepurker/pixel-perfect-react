@@ -8,6 +8,7 @@ const About = (props) => {
     return (
         <section className="about">
             About is works again!!
+            Try
         </section>
     )
 
