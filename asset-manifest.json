@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pixel-perfect-react/static/css/main.6831bacb.chunk.css",
-    "main.js": "/pixel-perfect-react/static/js/main.8ec90921.chunk.js",
-    "main.js.map": "/pixel-perfect-react/static/js/main.8ec90921.chunk.js.map",
+    "main.js": "/pixel-perfect-react/static/js/main.c9a35d17.chunk.js",
+    "main.js.map": "/pixel-perfect-react/static/js/main.c9a35d17.chunk.js.map",
     "runtime-main.js": "/pixel-perfect-react/static/js/runtime-main.64af3695.js",
     "runtime-main.js.map": "/pixel-perfect-react/static/js/runtime-main.64af3695.js.map",
     "static/js/2.8ab94ff7.chunk.js": "/pixel-perfect-react/static/js/2.8ab94ff7.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.64af3695.js",
     "static/js/2.8ab94ff7.chunk.js",
     "static/css/main.6831bacb.chunk.css",
-    "static/js/main.8ec90921.chunk.js"
+    "static/js/main.c9a35d17.chunk.js"
   ]
 }
