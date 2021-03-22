@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pixel-perfect-react/static/css/main.002e1d87.chunk.css",
+    "main.css": "/pixel-perfect-react/static/css/main.ee36726f.chunk.css",
     "main.js": "/pixel-perfect-react/static/js/main.30458590.chunk.js",
     "main.js.map": "/pixel-perfect-react/static/js/main.30458590.chunk.js.map",
     "runtime-main.js": "/pixel-perfect-react/static/js/runtime-main.3fee12f2.js",
@@ -10,11 +10,11 @@
     "static/js/3.86ba0b51.chunk.js": "/pixel-perfect-react/static/js/3.86ba0b51.chunk.js",
     "static/js/3.86ba0b51.chunk.js.map": "/pixel-perfect-react/static/js/3.86ba0b51.chunk.js.map",
     "index.html": "/pixel-perfect-react/index.html",
-    "static/css/main.002e1d87.chunk.css.map": "/pixel-perfect-react/static/css/main.002e1d87.chunk.css.map",
+    "static/css/main.ee36726f.chunk.css.map": "/pixel-perfect-react/static/css/main.ee36726f.chunk.css.map",
     "static/js/2.cadc160f.chunk.js.LICENSE.txt": "/pixel-perfect-react/static/js/2.cadc160f.chunk.js.LICENSE.txt",
     "static/media/About.scss": "/pixel-perfect-react/static/media/pattern-curve-top-left.77f903fb.svg",
     "static/media/Family.scss": "/pixel-perfect-react/static/media/pattern-curve-top-right.df37c69d.svg",
-    "static/media/Hero.scss": "/pixel-perfect-react/static/media/hero-bg-desktop.b1340563.jpg",
+    "static/media/Hero.scss": "/pixel-perfect-react/static/media/hero-bg-mobile.56d0d7be.jpg",
     "static/media/logo.f6ae2c4c.svg": "/pixel-perfect-react/static/media/logo.f6ae2c4c.svg",
     "static/media/menu-item1.7bd94a87.jpg": "/pixel-perfect-react/static/media/menu-item1.7bd94a87.jpg",
     "static/media/menu-item2.81249e77.jpg": "/pixel-perfect-react/static/media/menu-item2.81249e77.jpg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.3fee12f2.js",
     "static/js/2.cadc160f.chunk.js",
-    "static/css/main.002e1d87.chunk.css",
+    "static/css/main.ee36726f.chunk.css",
     "static/js/main.30458590.chunk.js"
   ]
 }
