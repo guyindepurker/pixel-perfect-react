@@ -4,7 +4,7 @@ import React from 'react'
 import './HomePage.scss'
 import Highlights from '../../cmps/Highlights/Highlights';
 import Hero from '../../cmps/Hero/Hero';
-import About from '../About/About';
+import About from '../../cmps/About/About';
 import Family from '../../cmps/Family/Family';
 import Contact from '../../cmps/ContactUs/ContactUs';
 
