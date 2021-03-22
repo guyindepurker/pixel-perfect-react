@@ -9,4 +9,9 @@
                         height: rem(40px);     
                      }   
                 }
+                @include respond(mobile){
+                          padding-top: 186px;
+                        display: flex;
+                        @include flex-center;
+                }
         }

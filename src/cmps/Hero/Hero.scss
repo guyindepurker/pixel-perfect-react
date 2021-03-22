@@ -6,13 +6,23 @@
         background-size: 100%;
         background-image: url(../../assets/imgs/homepage/hero-bg-desktop.jpg);
         color: $color-white;
-
+        @include respond(mobile){
+                background-image: url(../../assets/imgs/homepage/hero-bg-mobile.jpg);      
+        }
         &-container {
                 margin-top: rem(153px);
+                @include respond(mobile){
+                        margin-top: 0;
+                }
         }
 
         &-content {
                 max-width: rem(600px);
+                @include respond(mobile){
+                        text-align: center;
+                }
+        
+                
         }
 
         &-title {
