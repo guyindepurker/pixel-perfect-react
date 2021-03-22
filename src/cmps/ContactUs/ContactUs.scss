@@ -6,10 +6,28 @@
                 background-size: cover;
                 color: $color-white;
                 background-image: url(../../assets/imgs/homepage/ready-bg-desktop.jpg);
-        .contact-us-container{
+                @include respond(mobile){
+                
+                    background-size: cover;
+                    padding: 0;
+                  }
+                .contact-us-container{
+                @include respond(mobile){
+                      flex-direction: column;
+                      @include flex-center;
+                      text-align: center;
+                      margin-top: 30px;
+
+                }
                 .contact-header{
                         font-size: rem(40px); 
                         font-weight: 300;
+                        @include respond(mobile){
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+          
+                          }
+     
                 }
         }
         }

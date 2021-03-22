@@ -28,23 +28,23 @@ const Highlights = (props) => {
     ]
     return (
         <section className="highlights">
-               <div className="main-line container">
+            <div className="main-line container">
 
-<Line></Line>
-    </div>
-    <div className="highlights-container container flex space-between">
+                <Line></Line>
+            </div>
+            <div className="highlights-container container flex space-between">
 
-           <div className="highlights-content flex column">
-            
-        <h2 className="highlights-title">A few highlights from our menu</h2>
-        <p className="highlights-p">
-        We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.
+                <div className="highlights-content flex column">
+
+                    <h2 className="highlights-title">A few highlights from our menu</h2>
+                    <p className="highlights-p">
+                        We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.
         </p>
-           </div>
-        <div className="highlights-lists">
-               <BookList books={items} />
-           </div>
-    </div>
+                </div>
+                <div className="highlights-lists">
+                    <BookList books={items} />
+                </div>
+            </div>
         </section>
     )
 

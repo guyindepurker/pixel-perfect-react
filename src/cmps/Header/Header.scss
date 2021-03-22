@@ -11,6 +11,7 @@
                 }
                 @include respond(mobile){
                           padding-top: 186px;
+                          margin-bottom: 20px;
                         display: flex;
                         @include flex-center;
                 }

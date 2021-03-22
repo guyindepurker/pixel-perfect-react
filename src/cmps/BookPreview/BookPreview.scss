@@ -2,12 +2,16 @@
         @import "./src/styles/setup";
         .book-preview {
                 width: rem(540px);
+              
                 &:not(:last-child){
                         border-bottom: 1px solid rgba($color-white,0.15);
                 }
                 &:not(:first-child){
                         margin-top: rem(24px);    
 
+                }
+                @include respond(mobile){
+                        width: 327px;
                 }
                 .book{
                         
@@ -17,22 +21,49 @@
                                 background-color: #9e7f66;
                                 margin-top: rem(18px);
                                 margin-right: rem(30px);
+                                @include respond(mobile){
+                                        display: none;
+                                }
                         }
                         &-img{
                                 width: rem(128px);
                                 height: rem(96px);
+                                @include respond(mobile){
+                                        width: 100%;
+                                        height: 245px;
+                                        margin-bottom: 32px;
+
+                                }
+                                
                         }
                         &-content{
-                                
+                                @include respond(mobile){
+                                        display: flex;
+                                        flex-direction: column;
+                                        @include flex-center;
+                                        text-align: center; 
+                                }
+
                         }
                         &-container{
                             margin-bottom: rem(24px);    
+                            @include respond(mobile){
+                                margin-bottom: rem(60px);  
+                                flex-direction: column;
+                        }
                         }
                         &-title{
                                 margin: 0 0 rem(4px); 
                                 font-size: rem(18px);
                                 line-height: 1.56;
                                 font-weight: 400;
+
+                                @include respond(mobile){
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                        line-height: 1.87;
+                                }
+                                                              
     
                         }
                         &-desc{
@@ -41,6 +72,13 @@
                                 font-size: 15px; 
                                 width: rem(350px); 
                                 line-height: 1.87;
+                                @include respond(mobile){
+                                        font-weight: 300;
+
+                                        line-height: 1.87;
+                                        font-size: 15px;
+                                        line-height: 1.87;
+                                }
   
                         }
                 }

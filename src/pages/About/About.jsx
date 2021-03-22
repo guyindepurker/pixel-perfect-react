@@ -21,7 +21,7 @@ for all the family</h2>
                         <p className="about-p">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
                     </div>
                 </div>
-                <div className="about-box relative flex space-between ">
+                <div className="about-box about-box-2 relative flex space-between ">
 
                     <div className="about-content flex center-center column">
                         <div className="align-left">

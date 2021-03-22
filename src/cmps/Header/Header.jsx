@@ -2,7 +2,6 @@
 import React from 'react'
 import logo from '../../assets/imgs/logo.svg'
 import './Header.scss'
-// import Menu from '../Menu/Menu';
 
 const Header = (props) => {
 
@@ -10,7 +9,6 @@ const Header = (props) => {
         <header className="header">
             <div className="main-header container flex space-between">
                 <Logo />
-                {/* <Menu /> */}
             </div>
         </header>
     )

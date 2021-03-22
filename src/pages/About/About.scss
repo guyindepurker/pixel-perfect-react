@@ -9,8 +9,11 @@
 
         background-size: 895px 320px;
 
-
-
+        
+        @include respond(mobile) {
+                padding-bottom: 80px;
+                background-image:none;
+        }
         .align-left {
                 align-self: flex-start;
                 @include respond(mobile) {
@@ -20,6 +23,7 @@
 
         &-container {
                 padding-top: rem(180px);
+
         }
 
         &-content {
@@ -56,7 +60,13 @@
             
                 @include respond(mobile) {
                         flex-direction: column;
+                        @include flex-center;
                 }
+                @include respond(mobile) {
+                        &.about-box-2{
+                                flex-direction: column-reverse;
+                        }
+                        }
                 >*:first-child {
                         margin-right: rem(125px);
                         @include respond(mobile) {
@@ -75,6 +85,10 @@
                                 margin-bottom: rem(20px);
                         }
                 }
+                @include respond(mobile) {
+                        margin-bottom: rem(20px);
+                }
+              
             
         }
 
@@ -85,6 +99,9 @@
                 .lines {
                         @include positionCenter;
                         left: 108%;
+                        @include respond(mobile) {
+                                display: none;
+                        }
                 }
 
                 &-1 {
@@ -97,8 +114,10 @@
                         background-size: cover;
 
                         @include respond(mobile) {
-                                width: 375px;
+                        background-image: url(../../assets/imgs/homepage/enjoyable-place-mobile.jpg);
 
+                                width: 327px;
+                                height: 400px;
                                 top: -124px;
 
                         }
@@ -115,7 +134,13 @@
                         box-shadow: 1px 20px 50px 4px #3d7cd53b;
 
                         @include respond(mobile) {
-                                width: 375px;
+                        background-image: url(../../assets/imgs/homepage/locally-sourced-mobile.jpg);
+
+                                width: 327px;
+                                height: 400px;
+                                position: static;
+                                bottom: 0;
+                                margin:50px 0;
                         }
 
                 }

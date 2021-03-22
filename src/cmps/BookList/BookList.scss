@@ -1,3 +1,7 @@
 
         @import "./src/styles/setup";
-        .book-list {}
+        .book-list {
+                @include respond(mobile){
+                        flex-direction: column;
+                }
+        }

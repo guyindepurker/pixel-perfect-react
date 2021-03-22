@@ -7,11 +7,18 @@
                 background-repeat: no-repeat;
                 background-position: left top;
                 background-position-x: rem(-400px);
+                @include respond(mobile){
+                     background-image: none;   
+
+                }
                 &-title{
                         font-weight: 500;
                 font-size: rem(40px); 
                 line-height: 1.4;
                 margin-bottom: rem(16px);
+                @include respond(mobile){
+                       order: 1;
+                }
             }   
      
             &-p{
@@ -19,6 +26,9 @@
                 font-size: rem(18px);
                 margin-bottom: rem(50px);
                 max-width: 55ch;
+                @include respond(mobile){
+                        order: 2;
+                 }
             }   
             &-container{
                     padding-top: rem(160px);
@@ -28,10 +38,24 @@
         .img-line{
                 top: -42px;
                 left: -32px;
+                @include respond(mobile){
+                        display: none;
+                }
         }
             
             .family-box{
                     z-index: 3;
+                    @include respond(mobile){
+                        flex-direction: column;
+                        @include flex-center;
+                        text-align: center;
+                        button{
+                                @include respond(mobile){
+                                        order: 3;
+                                        
+                                 }
+                        }
+                }
                 &-img{
                         background-image: url(../../assets/imgs/homepage/family-gathering-desktop.jpg);
                         background-repeat: no-repeat;
@@ -42,12 +66,23 @@
 
                         //   background-size: 300px 100px;
                         margin-right: rem(125px);
+                        @include respond(mobile){
+                                margin-right: 0; 
+                                width: 326px;
+                                height: 360px;  
+                        }
                 }       
             }
             .family-content{
-
+                @include respond(mobile){
+                        @include flex-center;
+                }
             .family-list{
                     margin-top: rem(78px);
+                    @include respond(mobile){
+                        margin: 18px 0;
+                        order: 0;
+                }
                     .family-item{
                         font-size: rem(14px);
                         color: #4c4c4c;
@@ -60,7 +95,9 @@
                         &.active{
                                 margin-left: 5px;
                                 opacity: 1;
-
+                                @include respond(mobile){
+                                        margin-left: 0;
+                                }
                         }
                     }
 
