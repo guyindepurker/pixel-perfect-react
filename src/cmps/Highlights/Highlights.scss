@@ -1,0 +1,32 @@
+
+        @import "./src/styles/setup";
+        .highlights {
+                color: $color-white;
+                background-color:$color-black-bgc;
+                // padding: 203px 120px;
+                padding: 200px 165px 120px;
+
+                &-container{
+                        margin-top: rem(87px);
+                }
+                &-content{
+                        margin-right: rem(125px);
+                        max-width: rem(445px); 
+                }
+                &-title{
+                        margin-bottom: 16px;
+                        font-size: 40px;
+                        line-height: 1.4;
+
+                }
+                &-p{
+                        line-height: 1.67;
+                        height: 90px;
+
+                }
+                &-lists{
+
+                }
+
+
+        }

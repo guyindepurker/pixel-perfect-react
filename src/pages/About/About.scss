@@ -1,3 +1,94 @@
+@import "./src/styles/setup";
 
-        @import "./src/styles/setup";
-        .about {}
+.about {
+        background-color: $color-white;
+        font-weight: 300;
+        background-image: url(../../assets/imgs/patterns/pattern-curve-top-left.svg), url(../../assets/imgs/patterns/pattern-curve-top-right.svg);
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, no-repeat;
+
+        background-size: 895px 320px;
+
+
+
+        .align-left {
+                align-self: flex-start;
+        }
+
+        &-container {
+                padding-top: rem(180px);
+        }
+
+        &-content {
+                max-width: 400px;
+
+        }
+
+        &-title {
+                margin-top: rem(51px);
+                font-size: rem(40px);
+                line-height: 1.4;
+                font-weight: 300;
+                color: #242b37;
+        }
+
+        &-p {
+                margin-top: rem(16px);
+
+                line-height: 1.67;
+                font-size: rem(18px);
+
+                color: #242b37;
+        }
+
+        &-img {}
+
+        .about-box {
+                width: 100%;
+
+                >*:first-child {
+                        margin-right: rem(125px);
+                }
+
+                &.about-box-1 {
+                        height: 500px;
+                }
+
+                &:not(:last-child) {
+                        margin-bottom: rem(121px);
+                }
+        }
+
+        .about-img {
+                width: 50%;
+                box-shadow: -3px 11px 20px 3px #0000003b;
+
+                .lines {
+                        @include positionCenter;
+                        left: 108%;
+                }
+
+                &-1 {
+                        position: relative;
+                        top: -300px;
+                        width: 540px;
+                        height: 720px;
+                        background-image: url(../../assets/imgs/homepage/enjoyable-place-desktop.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                }
+
+                &-2 {
+                        position: relative;
+                        bottom: -50px;
+                        width: 540px;
+                        height: 720px;
+                        background-image: url(../../assets/imgs/homepage/locally-sourced-desktop.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        box-shadow: 1px 20px 50px 4px #3d7cd53b;
+
+                }
+        }
+
+}

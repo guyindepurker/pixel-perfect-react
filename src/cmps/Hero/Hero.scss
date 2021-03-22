@@ -1,3 +1,36 @@
+@import "./src/styles/setup";
 
-        @import "./src/styles/setup";
-        .hero {}
+.hero {
+        height: rem(820px);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(../../assets/imgs/homepage/hero-bg-desktop.jpg);
+        color: $color-white;
+
+        &-container {
+                margin-top: rem(153px);
+        }
+
+        &-content {
+                max-width: rem(600px);
+        }
+
+        &-title {
+                margin-bottom: rem(32px);
+                font-size: rem(64px);
+                font-weight: 300;
+
+        }
+
+        &-p {
+                font-weight: 300;
+                line-height: 1.67;
+                font-size: rem(18px);
+
+                margin-bottom: rem(42px);
+                max-width: rem(500px);
+        }
+
+     
+
+}

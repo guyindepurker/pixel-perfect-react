@@ -1,0 +1,15 @@
+
+        @import "./src/styles/setup";
+        .contact {
+                padding: rem(92px) 0;
+                height: rem(240px);
+                background-size: cover;
+                color: $color-white;
+                background-image: url(../../assets/imgs/homepage/ready-bg-desktop.jpg);
+        .contact-us-container{
+                .contact-header{
+                        font-size: rem(40px); 
+                        font-weight: 300;
+                }
+        }
+        }

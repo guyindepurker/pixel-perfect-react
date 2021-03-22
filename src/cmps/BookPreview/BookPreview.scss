@@ -1,0 +1,47 @@
+
+        @import "./src/styles/setup";
+        .book-preview {
+                width: rem(540px);
+                &:not(:last-child){
+                        border-bottom: 1px solid rgba($color-white,0.15);
+                }
+                &:not(:first-child){
+                        margin-top: rem(24px);    
+
+                }
+                .book{
+                        
+                        &-line{
+                                width: rem(32px);
+                                height: rem(1px);
+                                background-color: #9e7f66;
+                                margin-top: rem(18px);
+                                margin-right: rem(30px);
+                        }
+                        &-img{
+                                width: rem(128px);
+                                height: rem(96px);
+                        }
+                        &-content{
+                                
+                        }
+                        &-container{
+                            margin-bottom: rem(24px);    
+                        }
+                        &-title{
+                                margin: 0 0 rem(4px); 
+                                font-size: rem(18px);
+                                line-height: 1.56;
+                                font-weight: 400;
+    
+                        }
+                        &-desc{
+                                margin: 4px 0 0;
+                                font-weight: 400;
+                                font-size: 15px; 
+                                width: rem(350px); 
+                                line-height: 1.87;
+  
+                        }
+                }
+        }

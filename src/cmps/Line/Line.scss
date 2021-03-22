@@ -1,0 +1,16 @@
+
+        @import "./src/styles/setup";
+        .line {
+                width: 56px;
+                height: 1px;
+                color: #9e7f66;
+                background-color: #9e7f66;
+            
+        }
+        .ovel{
+                width: 7px;
+                height: 7px;
+                margin: 0 8px 0 0;
+                border: solid 1px #9e7f66;
+                border-radius: 50%;
+        }

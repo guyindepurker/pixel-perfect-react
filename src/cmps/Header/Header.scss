@@ -1,6 +1,12 @@
 
         @import "./src/styles/setup";
         .header {
-                background-color: bisque;
-                padding: 30px 0;
+                background-color: transparent;
+                padding-top: 65px;
+                .logo{
+                     &-img{
+                        width: rem(103px);
+                        height: rem(40px);     
+                     }   
+                }
         }

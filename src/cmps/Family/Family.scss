@@ -1,0 +1,69 @@
+
+        @import "./src/styles/setup";
+        .family {
+                color: $color-black-2;
+                background-color: $color-white;
+                background-image: url(../../assets/imgs/patterns/pattern-curve-top-right.svg);
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-position-x: rem(-400px);
+                &-title{
+                        font-weight: 500;
+                font-size: rem(40px); 
+                line-height: 1.4;
+                margin-bottom: rem(16px);
+            }   
+     
+            &-p{
+                line-height: 1.67;
+                font-size: rem(18px);
+                margin-bottom: rem(50px);
+                max-width: 55ch;
+            }   
+            &-container{
+                    padding-top: rem(160px);
+                    margin-bottom: rem(160px);
+            }
+    
+        .img-line{
+                top: -42px;
+                left: -32px;
+        }
+            
+            .family-box{
+                    z-index: 3;
+                &-img{
+                        background-image: url(../../assets/imgs/homepage/family-gathering-desktop.jpg);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        height: rem(395px);
+                        width: rem(540px);
+                        box-shadow: 1px 15px 20px 2px #0000003d;
+
+                        //   background-size: 300px 100px;
+                        margin-right: rem(125px);
+                }       
+            }
+            .family-content{
+
+            .family-list{
+                    margin-top: rem(78px);
+                    .family-item{
+                        font-size: rem(14px);
+                        color: #4c4c4c;
+                        opacity: 0.5;
+                        letter-spacing: 2px;
+                        // line-height: 2;
+                        &:not(:last-child){
+                                margin-bottom: rem(26px);
+                        }
+                        &.active{
+                                margin-left: 5px;
+                                opacity: 1;
+
+                        }
+                    }
+
+            }
+        }    
+        }

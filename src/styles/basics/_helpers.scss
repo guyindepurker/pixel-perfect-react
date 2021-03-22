@@ -100,4 +100,22 @@
 }
 
 
+.btn {
+  max-width:  rem(245px);
+  border: 1px solid $color-white;
+  background-color: transparent;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
 
+  padding: rem(24px) rem(20px);
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: 2px;
+  font-size: rem(14px);
+  font-weight: 300;
+  &-dark{
+    color: $color-white;
+    background-color: $color-black-bgc;
+    border-color: $color-black-bgc;
+  }
+}
